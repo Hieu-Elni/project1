@@ -1,0 +1,246 @@
+
+ol, ul {
+	list-style: none;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+h1.todo{
+
+	font-size: 100px;
+font-weight: 100;
+text-align: center;
+color: rgba(175, 47, 47, 0.15);
+}
+body {
+	background-color:#f5f5f5 !important;
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+.what_text {
+	padding: 15px 20px;
+}
+
+#list-todo{
+	margin: 0 auto;
+	width: 600px;
+	margin-top:55px;
+}
+li{
+float: left;
+width: 100%;
+}
+
+ .editTodo li{
+width: auto;
+font-size: 14px;
+
+}
+
+.editTodo li button{
+	color:#777;
+}
+.show{
+	margin: 0 auto;
+	background: white;
+	position: relative;
+}
+
+.input1{
+	width: 90%;
+	border: none;
+	margin-left: 35px;
+	opacity: 0.2;
+    font-size: 24px;
+    font-style: italic;
+}
+input.input1:focus{
+	outline:none;
+}
+input.input2{
+	width: 80%;
+	margin: 0px 10px;
+}
+
+.view{
+	position: relative;
+	height: 35px;
+    line-height: 35px;
+}
+.view span {
+	padding-left: 20px;
+	color:#8a8484;
+	font-size: 20px;
+}
+button.delete {
+    float: right;
+    display: none;
+    background: none;
+   padding:0;
+	border: none;
+	color:#af5b5e;
+}
+li.list-group-item {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+/* .hide{
+	 display:none; 
+} */
+.view:hover button.delete{
+	display: block;
+}
+.ischeckline{
+	text-decoration: line-through;
+	color:#d9d9d9 !important;
+}
+
+.selected{
+	border: rgba(175, 47, 47, 0.2) solid 1px;
+}
+
+.editTodo{
+	padding:10px 15px;
+	height: 47px;
+	color:#777;
+}
+.editTodo a{
+	color:#777;
+}
+ul.editmain {
+    position: absolute;
+    right: 0;
+	left: 0;
+	padding: 5px 20px;
+}
+/* ul li:hover{
+	border:1px solid blue;
+} */
+.editmain button{
+	background: white;
+	border-radius: 3px;
+	padding: 1px 5px;
+	border:1px solid transparent;
+}
+.editmain button:hover{
+	border-color: rgba(175, 47, 47, 0.2);
+}
+.spanEdit{
+width: 300px;
+}
+.editmain button:focus{
+	outline:0;
+	border-color:rgba(175, 47, 47, 0.2)
+}
+.editTodo:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6, 0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6, 0 17px 2px -6px rgba(0, 0, 0, 0.2);
+}
+.editmain a:hover{
+	color:#777;
+}
+.right{
+	float: right;
+}
+	.editTodo .editmain li{
+		/* width: auto; */
+		display: inline;
+		/* height: auto; */
+	}
+.con{
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 18px;
+}
+.checkmark{
+	position: absolute;
+	top: 0;
+    left: 0;
+    height: 32px;
+	width: 32px;
+	/* background-color: #eee; */
+	border-radius: 50%;
+	border: #777 solid 1px;
+	opacity: 0.3;
+}
+.con input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+.con input:checked ~ .checkmark {
+	background-color:white;
+	border: #6ecab8 solid 0.8px;
+	opacity: 1;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+    left: 10px;
+    top: 3px;
+	width: 9px;
+    height: 20px;
+    border: solid #6ecab8;
+    border-width: 0px 3px 3px 0px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.info{
+margin: 65px auto 0;
+color: #bfbfbf;
+font-size: 10px;
+text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+text-align: center;
+}
+.info a{
+	color:#777 ;
+}
+.info a:hover{
+	color:#777 ;
+	text-decoration: none !important;
+}
+.toogle-all input[type="checkbox"] {
+    outline: none;
+}
+.toogle-all{
+	-webkit-transform: rotate(90deg);
+     transform: rotate(90deg);
+    -webkit-appearance: none;
+    appearance: none;
+}
+.toogle-all:before{
+    content: '❯';
+    font-size: 22px;
+    color: #e6e6e6;
+    padding: 10px 27px 10px 27px;
+}
+.toogle-all{
+	position: absolute;
+	top: 13px;
+    left: 0px;
+    width: 60px;
+    height: 34px;
+    text-align: center;
+    border: none;
+}
+.toogle-all:focus{
+	outline:none;
+}
+
